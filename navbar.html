@@ -8,21 +8,26 @@
     <style>
         .navbar-nav .nav-link.active, .nav-link {
             color: #fff;
+            
         }
-        .navbar-collapse{
-            background-color: black;
+        .navbar-nav .nav-link.active{
+            background-color: #908e8e;
+        }
+        .nav.navbar-nav.nav-pills{
+            text-align: center;
+            background-color: rgb(74, 72, 72);
         }
     </style>
 </head>
 <body>
     <heaader>
-        <div class="navbar">
+        <div class="navbar navbar-expand-lg">
             <div class="container">
                 <h1>Titulo do site</h1>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <nav class="collapse navbar-collapse" id="menu">
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
                     <ul class="nav navbar-nav nav-pills">
                         <li class="nav-item">
                             <a href="#" class="nav-link active">Inicio</a>
