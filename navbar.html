@@ -10,9 +10,6 @@
             color: #fff;
             
         }
-        .navbar-nav .nav-link.active{
-            background-color: #908e8e;
-        }
         .nav.navbar-nav.nav-pills{
             text-align: center;
             background-color: rgb(74, 72, 72);
@@ -20,18 +17,20 @@
 
         section{
             height: 100vh;
-            background-color: #908e8e;
+            background-color: #ccc;
             border: solid rgb(74, 72, 72) 1px;
+            padding-top: 70px;
         }
         header{
             position: sticky;
             top: 0;
             left: 0;
+            background-color: #fff;
         }
     </style>
 </head>
 <body>
-    <header>
+    <header id="cabecalho">
         <div class="navbar navbar-expand-lg">
             <div class="container">
                 <h1>Titulo do site</h1>
@@ -41,34 +40,36 @@
                 <nav class="collapse navbar-collapse justify-content-end" id="menu">
                     <ul class="nav navbar-nav nav-pills">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">Inicio</a>
+                            <a href="#inicio" class="nav-link active">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Produtos</a>
+                            <a href="#produtos" class="nav-link">Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Promoções</a>
+                            <a href="#promocoes" class="nav-link">Promoções</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Contatos</a>
+                            <a href="#contatos" class="nav-link">Contatos</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <section id="inicio">
-        <h2>Inicio</h2>
-    </section>
-    <section id="produtos">
-        <h2>Produtos</h2>
-    </section>
-    <section id="promocoes">
-        <h2>Promoções</h2>
-    </section>
-    <section id="contatos">
-        <h2>Contato</h2>
-    </section>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="inicio">
+            <h2>Inicio</h2>
+        </section>
+        <section id="produtos">
+            <h2>Produtos</h2>
+        </section>
+        <section id="promocoes">
+            <h2>Promoções</h2>
+        </section>
+        <section id="contatos">
+            <h2>Contato</h2>
+        </section>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
